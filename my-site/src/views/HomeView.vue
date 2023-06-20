@@ -11,7 +11,7 @@ const count = ref(0)
 <template><div>
 	<header class="top-0 z-50 bg-color-primary">
 		<nav class="container flex justify-between items-center">
-			<div class="w-20 py-5 text-color-secondary font-bold text-3x1">
+			<div class="w-10 py-5 text-color-secondary font-bold text-3x1">
 				<a href="#home">
 					<img src="/pyramid.svg" class="logo" alt="Pyramid Logo" />
 					<span class="text-color-white">Jah</span>Knows
@@ -49,14 +49,31 @@ const count = ref(0)
 		</nav>
 	</header>
 
+    <section id="ceo" class="relative bg-color-primary-light">
+        <div class="container py-20">
+            <div class="flex flex-col justify-center z-20 md:flex-row">
+                <div class="w-1/3">
+                    <img class="w-1/2 rounded-full" src="src/assets/face.svg" alt="">
+                </div>
+                <div class="text-center md:text-left md:w-1/2 md:pr-10">
+                    <h1 class="title mb-4">I AM Jah Noah.</h1>
+                    <p class="leading-relaxed mb-10">Let's get creative!</p>
+                    <canvas id="CEO3d">
+                        
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
 	<main>
 		<section id="about" class="bg-color-primary-light">
             <div class="container py-20">
 
 				<!-- About Container Heading -->
-                <div class="text-center m-auto mb-20 md:w-1/2">
+                <div class="text-center m-auto mb-20 md:w-2/3">
                     <h4 class="font-bold text-color-secondary mb-4">About</h4>
-                    <h1 class="title">A few blurbs about the organization.</h1>
+                    <h1 class="title">A few blurbs about me.</h1>
                 </div>
 
 				<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
@@ -67,7 +84,7 @@ const count = ref(0)
                             <i class="fa-solid fa-heartbeat text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Mission</h3>
-                        <p class="leading-relaxed">Assisting individuals and groups with tapping into their natural abundance.</p>
+                        <p class="leading-relaxed">Helping individuals and groups tap into their natural abundance.</p>
                     </div>
                     
 					<!-- card no 2 -->
@@ -76,7 +93,7 @@ const count = ref(0)
                             <i class="fa-solid fa-bullseye text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Vision</h3>
-                        <p class="leading-relaxed">Uniting communities and nations universally with love, harmony and gratitude.</p>
+                        <p class="leading-relaxed">Uniting communities and nations universally with love, harmony, gratitude, and joy.</p>
                     </div>
                     
 					<!-- card no 3 -->
@@ -84,7 +101,7 @@ const count = ref(0)
                         <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
                             <i class="fa-solid fa-leaf text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold py-4">CEO's Message</h3>
+                        <h3 class="text-xl font-bold py-4">Message</h3>
                         <p class="leading-relaxed">I want to see all of my beautiful people thrive.</p>
                     </div>
                 </div>
@@ -92,21 +109,6 @@ const count = ref(0)
             </div>
         </section>
 
-        <section id="ceo" class="relative bg-color-primary-light">
-            <div class="container py-20">
-                <div class="flex flex-col items-center z-20 md:flex-row">
-                    <div class="md:w-1/3">
-                        <img class="w-1/2 rounded-full" src="src/assets/face.svg" alt="">
-                        <p>Founder / CEO</p>
-                    </div>
-                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                        <h1 class="title mb-4">I AM Jah Noah.</h1>
-                        <!-- <button class="btn">Read More</button> -->
-                        <p class="leading-relaxed mb-10">Let's get creative!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
         <section id="media" class="hidden">
