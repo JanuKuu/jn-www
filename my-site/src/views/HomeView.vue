@@ -9,7 +9,7 @@ const count = ref(0)
 </script>
 
 <template><div>
-	<header class="sticky top-0 z-50 bg-teal-700">
+	<header class="top-0 z-50 bg-color-primary">
 		<nav class="container flex justify-between items-center">
 			<div class="w-20 py-5 text-color-secondary font-bold text-3x1">
 				<a href="#home">
@@ -25,13 +25,13 @@ const count = ref(0)
 					<li><a href="#media" class="hover:text-color-secondary ease-in duration-200">Media</a></li>
 					<li><a href="#shop" class="hover:text-color-secondary ease-in duration-200">Shop</a></li>
 					<li><a href="#dm" class="btn hover:text-color-secondary ease-in duration-200">Let's Talk</a></li>
-
+                    <li><button class="btn" @click="count++">Boops: {{ count }}</button></li>
 					<!-- <li><button class="btn">Let's Talk</button></li> -->
 				</ul>
 			</div>
 
 			<!-- Mobile Screen -->
-			<div id="hamburger" class="lg:hidden cursor-pointer">
+			<div id="hamburger" class="hidden cursor-pointer">
 				<i class="fa-solid fa-bars"></i>
 			</div>
 
@@ -42,8 +42,7 @@ const count = ref(0)
 					<li><a href="#media" class="hover:text-color-secondary ease-in duration-200">Media</a></li>
 					<li><a href="#shop" class="hover:text-color-secondary ease-in duration-200">Shop</a></li>
 					<li><a href="#dm" class="btn hover:text-color-secondary ease-in duration-200">Let's Talk</a></li>
-
-					<!-- <li><button class="brn">Let's Talk</button></li> -->
+                    <!-- <li><button class="brn">Let's Talk</button></li> -->
 				
 				</ul>
 			</div>
@@ -51,29 +50,13 @@ const count = ref(0)
 	</header>
 
 	<main>
-		<section id="home" class="relative">
-            <div class="blob1"></div>
-            <div class="blob2"></div>
-            <div class="container py-20">
-                <div class="flex flex-col items-center z-20 md:flex-row">
-                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                        <p class="leading-relaxed mb-10">{{ msg }}</p>
-                        <button class="btn" type="button" @click="count++">Boops: {{ count }}</button>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="./img/hero4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
 		<section id="about" class="bg-color-primary-light">
             <div class="container py-20">
 
 				<!-- About Container Heading -->
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-color-secondary mb-4">About</h4>
-                    <h1 class="title">Rerum sapiente alias abmet consectetur adipisicing elit.</h1>
+                    <h1 class="title">A few blurbs about the organization.</h1>
                 </div>
 
 				<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
@@ -81,53 +64,52 @@ const count = ref(0)
 					<!-- card no 1 -->
                     <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
                         <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
-                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                            <i class="fa-solid fa-heartbeat text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Mission</h3>
-                        <p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+                        <p class="leading-relaxed">Assisting individuals and groups with tapping into their natural abundance.</p>
                     </div>
                     
 					<!-- card no 2 -->
                     <div class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer">
                         <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
-                            <i class="fa-solid fa-chart-column text-4xl"></i>
+                            <i class="fa-solid fa-bullseye text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Vision</h3>
-                        <p class="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p class="leading-relaxed">Uniting communities and nations universally with love, harmony and gratitude.</p>
                     </div>
                     
 					<!-- card no 3 -->
                     <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
                         <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
-                            <i class="fa-solid fa-phone text-4xl"></i>
+                            <i class="fa-solid fa-leaf text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold py-4">Jah Noah</h3>
-                        <p class="leading-relaxed">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3 class="text-xl font-bold py-4">CEO's Message</h3>
+                        <p class="leading-relaxed">I want to see all of my beautiful people thrive.</p>
+                    </div>
+                </div>
+                <!-- <p class="text-center leading-relaxed mb-10">{{ msg }}</p> -->
+            </div>
+        </section>
+
+        <section id="ceo" class="relative bg-color-primary-light">
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="md:w-1/3">
+                        <img class="w-1/2 rounded-full" src="src/assets/face.svg" alt="">
+                        <p>Founder / CEO</p>
+                    </div>
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title mb-4">I AM Jah Noah.</h1>
+                        <!-- <button class="btn">Read More</button> -->
+                        <p class="leading-relaxed mb-10">Let's get creative!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-		<section id="Founder">
-            <div class="container py-20 relative">
-                <div class="blob1"></div>
-                <div class="blob2"></div>
-                
-                <div class="flex flex-col items-center justify-between md:flex-row">
-                    <div class="mb-12 md:w-1/2">
-                        <img src="/face.svg" alt="">
-                    </div>
-                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
-                        <h4 class="font-bold text-color-secondary mb-4">Who AM I</h4>
-                        <h1 class="title mb-4">I AM Jah Noah, Founder and CEO</h1>
-                        <p class="leading-relaxed mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolores sequi asperiores dolor iure tenetur ea officiis dignissimos est placeat!</p>
-                        <button class="btn">Read More</button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="media">
+        <section id="media" class="hidden">
             <div class="container py-20">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-color-secondary mb-4">Media</h4>
@@ -199,7 +181,7 @@ const count = ref(0)
             </div>
         </section>
 
-		<section id="shop" class="bg-color-primary-light">
+		<section id="shop" class="hidden bg-color-primary-light">
             <div class="container py-20">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-color-secondary mb-4">Shop</h4>
@@ -438,7 +420,7 @@ const count = ref(0)
             </div>
         </section>
 
-        <section id="download-app" class="bg-color-primary-light">
+        <section id="download-app" class="hidden bg-color-primary-light">
             <div class="container h-[80vh] grid place-items-center">
                 <div class="text-center md:w-2/3 m-auto">
                     <h1 class="title">Download App Now And Explore</h1>

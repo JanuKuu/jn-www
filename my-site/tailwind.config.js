@@ -6,11 +6,11 @@ export default {
 	],
 	theme: {
 		extend: {
-			colors: {
-				"color-primary": "#01051e",
-				"color-primary-light": "#020726",
-				"color-primary-dark": "#010417",
-				"color-secondary": "#ff7d3b",
+			colors: { 
+				"color-primary": "#77966D",
+				"color-primary-light": "#BDC667",
+				"color-primary-dark": "#626D58",
+				"color-secondary": "#544343",
 				"color-gray": "#333",
 				"color-white": "#fff",
 				"color-blob": "#A427DF",
