@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 
+// components
+import ThreeModel from '../comps/floatingDino.vue';
+
 defineProps({
 	msg: String,
 })
@@ -52,15 +55,15 @@ const count = ref(0)
     <section id="ceo" class="relative bg-color-primary-light">
         <div class="container py-20">
             <div class="flex flex-col justify-center z-20 md:flex-row">
-                <div class="w-1/3">
+                <!-- <div class="w-1/3">
                     <img class="w-1/2 rounded-full" src="src/assets/face.svg" alt="">
-                </div>
+                </div> -->
                 <div class="text-center md:text-left md:w-1/2 md:pr-10">
                     <h1 class="title mb-4">I AM Jah Noah.</h1>
-                    <p class="leading-relaxed mb-10">Let's get creative!</p>
-                    <canvas id="CEO3d">
-                        
-                    </canvas>
+                    <p class="leading-relaxed mb-10">What is that one thing you have always dreamed of building?
+                        Is it an artistic masterpiece, ambitious business venture, a family legacy?
+                        I know you have what it takes to make it happen. Bold statement, huh? Well, no need to linger.
+                        Let's get creative!</p>
                 </div>
             </div>
         </div>

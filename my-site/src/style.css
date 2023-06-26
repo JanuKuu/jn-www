@@ -24,7 +24,6 @@
 
 .user-text {
     display: none;
-}
 
 .user-text.active-text {
     display: block;
