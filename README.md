@@ -1,12 +1,13 @@
-# My Personal Website: jahnoahsimpson.com
+# My Personal Website: jahnoah.com
 
 Credits:
 
 	Design:
-		@ajlkn (https://aj.lkn.io/)
+		@janukuu (jahnoah.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
 
 	Other:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+		NUXT.JS web development framework
+		THREE.JS WebGL graphics utility
