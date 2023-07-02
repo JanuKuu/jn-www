@@ -9,4 +9,5 @@ Credits:
 		Font Awesome (fontawesome.io)
 
 	Other:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+		NUXT.JS web development framework
+		THREE.JS WebGL graphics utility

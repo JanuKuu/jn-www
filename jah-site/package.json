@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "jah-site",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -12,7 +12,8 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18",
-    "nuxt": "^3.6.1"
+    "nuxt": "^3.6.1",
+    "nuxt-icon": "^0.4.2"
   },
   "dependencies": {
     "three": "^0.154.0"

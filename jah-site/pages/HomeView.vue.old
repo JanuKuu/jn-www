@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 // components
-import ThreeModel from '../comps/floatingDino.vue';
+import ThreeModel from '../../my-site/src/comps/floatingDino.vue';
 
 defineProps({
 	msg: String,
