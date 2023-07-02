@@ -36,7 +36,7 @@ jobs:
             .github
             jah-site
       - name: Open Source Folder
-        run: cd ./jah-knows
+        run: cd ${{ github.workspace }}/jah-knows
       - name: Detect package manager
         id: detect-package-manager
         run: |
