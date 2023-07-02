@@ -31,12 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          sparse-checkout: |
-            .github
-            jah-site
-      - name: Open Source Folder
-        run: cd jah-site
+#        with:
+#          sparse-checkout: |
+#            .github
+#            jah-site
+#      - name: Open Source Folder
+#        run: cd jah-site
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -57,7 +57,7 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache-dependency-path: '/jah-knows'
+          cache-dependency-path: './jah-knows'
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
