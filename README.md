@@ -3,11 +3,11 @@
 Credits:
 
 	Design:
-		@janukuu (jahnoah.com)
+		@janukuu ( jahnoah.com )
 
 	Icons:
-		Font Awesome (fontawesome.io)
+		Iconify
 
 	Other:
-		NUXT.JS web development framework
-		THREE.JS WebGL graphics utility
+		NUXT.JS web framework
+		THREE.JS WebGL utility
