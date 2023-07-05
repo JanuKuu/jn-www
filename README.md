@@ -9,5 +9,5 @@ Credits:
 		Iconify
 
 	Other:
-		NUXT.JS web framework
-		THREE.JS WebGL utility
+		NUXT.JS Vue-based web framework
+		THREE.JS WebGL graphics library
