@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  jnrp:
+    image: nginx:latest
+    volumes:
+      - "./default.conf:/etc/nginx/conf.d/default.conf"
+    networks:
+      - home
+      - jk
+
+  home:
+    image: 'nginx:latest'
+    networks:
+      - jk
+
+networks:
+  home:
+    external: true
+  jk:
+    external: true
