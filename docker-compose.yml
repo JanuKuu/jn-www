@@ -11,7 +11,7 @@ services:
     # ports:
       # - 8080:80
 
-  frontend:
+  jn-frontend:
     image: nginx:latest
     volumes:
       - "./src/publishMe/public:/usr/share/nginx/html"
