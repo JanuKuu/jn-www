@@ -3,7 +3,7 @@ services:
   kcrp:
     image: nginx:latest
     volumes:
-      - "./nginxconf/jkrp.conf:/etc/nginx/nginx.conf"
+      - "./nginxconf/jnrp.conf:/etc/nginx/nginx.conf"
     networks:
       - home
       - jk
