@@ -1,15 +1,20 @@
 version: '3.4'
 services:
-  jnrp:
+  kcrp:
     image: nginx:latest
     volumes:
-      - "./default.conf:/etc/nginx/conf.d/default.conf"
+      - "./nginxconf/jkrp.conf:/etc/nginx/nginx.conf"
     networks:
       - home
       - jk
+    # ports enabled for dev test only
+    # ports:
+      # - 8080:80
 
-  home:
-    image: 'nginx:latest'
+  frontend:
+    image: nginx:latest
+    volumes:
+      - "./src/publishMe/public:/usr/share/nginx/html"
     networks:
       - jk
 
