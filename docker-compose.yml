@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  kcrp:
+  jnrp:
     image: nginx:latest
     volumes:
       - "./nginxconf/jnrp.conf:/etc/nginx/nginx.conf"
